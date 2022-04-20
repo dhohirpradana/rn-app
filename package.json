@@ -1,24 +1,48 @@
 {
-  "name": "project",
+  "name": "yacalc",
+  "description": "ya kalkulator",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
+    "build": "expo build",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo-google-fonts/balsamiq-sans": "^0.2.2",
+    "@expo/vector-icons": "^12.0.5",
+    "@react-navigation/bottom-tabs": "^6.3.1",
+    "@react-navigation/native": "^6.0.10",
+    "@react-navigation/native-stack": "^6.6.1",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@rneui/base": "^4.0.0-rc.1",
+    "@rneui/themed": "^4.0.0-rc.1",
     "expo": "~44.0.0",
+    "expo-app-loading": "^1.3.0",
     "expo-status-bar": "~1.2.0",
+    "native-base": "^3.4.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
-    "react-native-web": "0.17.1"
+    "react-native-safe-area-context": "^4.2.4",
+    "react-native-screens": "^3.13.1",
+    "react-native-svg": "12.1.1",
+    "react-native-vector-icons": "^9.1.0",
+    "react-native-web": "^0.17.7",
+    "react-redux": "^8.0.0",
+    "recoil": "^0.7.2",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.16.7"
+  },
+  "android": {
+    "package": "com.babahaha.yacalc"
   },
   "private": true
 }
