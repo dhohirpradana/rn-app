@@ -1,4 +1,6 @@
-package com.babahahadev.calc;
+package com.babahahadev.todo;
+
+import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
 
 import android.app.Application;
 import android.content.Context;
@@ -11,6 +13,7 @@ import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.facebook.react.shell.MainReactPackage;
 
 import expo.modules.ApplicationLifecycleDispatcher;
 import expo.modules.ReactNativeHostWrapper;
@@ -35,6 +38,8 @@ public class MainApplication extends Application implements ReactApplication {
       List<ReactPackage> packages = new PackageList(this).getPackages();
       // Packages that cannot be autolinked yet can be added manually here, for example:
       // packages.add(new MyReactNativePackage());
+      // packages.add(new MainReactPackage());
+      // packages.add(new ReactNativeFirebaseAppPackage());
       return packages;
     }
 
@@ -79,7 +84,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.babahahadev.calc.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("com.babahahadev.todo.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

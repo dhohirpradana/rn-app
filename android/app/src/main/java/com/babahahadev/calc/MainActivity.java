@@ -1,4 +1,4 @@
-package com.babahahadev.calc;
+package com.babahahadev.todo;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -8,8 +8,6 @@ import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
 
 import expo.modules.ReactActivityDelegateWrapper;
-
-import com.BV.LinearGradient.LinearGradientPackage;
 
 public class MainActivity extends ReactActivity {
   @Override
@@ -55,13 +53,5 @@ public class MainActivity extends ReactActivity {
     // Use the default back button implementation on Android S
     // because it's doing more than {@link Activity#moveTaskToBack} in fact.
     super.invokeDefaultOnBackPressed();
-  }
-
-  @Override
-  protected List<ReactPackage> getPackages() {
-    return Arrays.<ReactPackage>asList(
-      new MainReactPackage(),
-      new LinearGradientPackage() // <---- and This! 
-    );
   }
 }

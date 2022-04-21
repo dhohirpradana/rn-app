@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "project",
-    "slug": "project",
+    "name": "yatodo",
+    "slug": "yatodo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,15 +20,19 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./android/app/google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.babahahadev.calc"
+      "package": "com.babahahadev.todo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": ""
+    "plugins": [
+      "@react-native-firebase/app"
+    ],
+    "description": "ya kalkulator"
   }
 }
